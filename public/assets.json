@@ -5,6 +5,7 @@
       "id": "001",
       "filename": "/assets/videos/000_Inevitable WIP Upscale_2.mp4",
       "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_001.jpg",
       "title": "Main Upscale WIP",
       "comments": "Initial upscaled version. Enhanced detail throughout the composition."
     },
@@ -12,6 +13,7 @@
       "id": "002",
       "filename": "/assets/videos/Hailuo_Video_Cinematic macro shot at ground_439438145371107335.mp4",
       "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_002.jpg",
       "title": "Cinematic Macro - Ground Level",
       "comments": "Close ground-level macro shot with cinematic framing."
     },
@@ -19,6 +21,7 @@
       "id": "003",
       "filename": "/assets/videos/Hailuo_Video_Close-up shot of cybernetic ar_440337820144619528.mp4",
       "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_003.jpg",
       "title": "Cybernetic Close-up",
       "comments": "Detailed close-up of cybernetic elements with focus on intricate details."
     },

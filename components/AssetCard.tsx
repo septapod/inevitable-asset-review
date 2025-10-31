@@ -11,6 +11,7 @@ interface AssetCardProps {
 export default function AssetCard({ asset, onSelect }: AssetCardProps) {
   const isVideo = asset.type === "video";
   const isImage = asset.type === "image";
+  const imageSource = isVideo && asset.thumbnail ? asset.thumbnail : asset.filename;
 
   return (
     <button
@@ -18,27 +19,24 @@ export default function AssetCard({ asset, onSelect }: AssetCardProps) {
       className="group relative h-64 w-full overflow-hidden rounded-lg bg-dark-800 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer"
     >
       <div className="relative w-full h-full">
-        {isImage && (
-          <Image
-            src={asset.filename}
-            alt={asset.title}
-            fill
-            className="object-cover group-hover:scale-110 transition-transform duration-300"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        )}
+        <Image
+          src={imageSource}
+          alt={asset.title}
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-300"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
 
         {isVideo && (
-          <div className="w-full h-full bg-gradient-to-br from-dark-700 to-dark-800 flex items-center justify-center">
-            <div className="text-center">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+            <div className="p-3 rounded-full bg-white/90 group-hover:bg-white transition-colors">
               <svg
-                className="w-12 h-12 mx-auto mb-2 text-white group-hover:scale-125 transition-transform"
+                className="w-6 h-6 text-dark-900 group-hover:scale-125 transition-transform"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
               </svg>
-              <p className="text-sm text-gray-300">Video</p>
             </div>
           </div>
         )}
