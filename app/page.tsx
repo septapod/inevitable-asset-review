@@ -19,13 +19,19 @@ export default function Home() {
 
   const handleNextAsset = () => {
     if (hasNext && currentAssetIndex !== -1) {
-      setSelectedAsset(assets[currentAssetIndex + 1]);
+      const nextAsset = assets[currentAssetIndex + 1];
+      if (nextAsset) {
+        setSelectedAsset(nextAsset);
+      }
     }
   };
 
   const handlePreviousAsset = () => {
     if (hasPrevious && currentAssetIndex !== -1) {
-      setSelectedAsset(assets[currentAssetIndex - 1]);
+      const prevAsset = assets[currentAssetIndex - 1];
+      if (prevAsset) {
+        setSelectedAsset(prevAsset);
+      }
     }
   };
 
