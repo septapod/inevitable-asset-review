@@ -1,0 +1,75 @@
+{
+  "title": "Inevitable Spot Asset Review",
+  "assets": [
+    {
+      "id": "001",
+      "filename": "/assets/videos/000_Inevitable WIP Upscale_2.mp4",
+      "type": "video",
+      "title": "Main Upscale WIP",
+      "comments": "Initial upscaled version. Enhanced detail throughout the composition."
+    },
+    {
+      "id": "002",
+      "filename": "/assets/videos/Hailuo_Video_Cinematic macro shot at ground_439438145371107335.mp4",
+      "type": "video",
+      "title": "Cinematic Macro - Ground Level",
+      "comments": "Close ground-level macro shot with cinematic framing."
+    },
+    {
+      "id": "003",
+      "filename": "/assets/videos/Hailuo_Video_Close-up shot of cybernetic ar_440337820144619528.mp4",
+      "type": "video",
+      "title": "Cybernetic Close-up",
+      "comments": "Detailed close-up of cybernetic elements with focus on intricate details."
+    },
+    {
+      "id": "004",
+      "filename": "/assets/images/ianfreeze_Cinematic_wide_shot_of_an_industrial_scientific_spa_ff1b3549-5c40-4ff0-888e-04e3ae07620a_2.png",
+      "type": "image",
+      "title": "Industrial Lab Scene",
+      "comments": "Wide angle establishing shot of industrial scientific space."
+    },
+    {
+      "id": "005",
+      "filename": "/assets/images/ianfreeze_Macro_shot_of_a_medical_monitoring_screen_transpare_8b5b3a52-de86-4e11-a5f8-fdb5dad0a2af_0.png",
+      "type": "image",
+      "title": "Medical Monitor - Variant 1",
+      "comments": "Macro shot of medical monitoring screen with transparent elements."
+    },
+    {
+      "id": "006",
+      "filename": "/assets/images/ianfreeze_Macro_shot_of_a_medical_monitoring_screen_transpare_8b5b3a52-de86-4e11-a5f8-fdb5dad0a2af_1.png",
+      "type": "image",
+      "title": "Medical Monitor - Variant 2",
+      "comments": "Alternative angle of medical monitoring interface."
+    },
+    {
+      "id": "007",
+      "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_0c4406b4-16e2-4e96-a6da-463dd233ef01_3.png",
+      "type": "image",
+      "title": "Spaceship Corridor - Version 1",
+      "comments": "Wide-angle perspective down a long spaceship corridor with architectural detail."
+    },
+    {
+      "id": "008",
+      "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_27ac975c-7920-4ff2-b770-4d6f7eebf855_1.png",
+      "type": "image",
+      "title": "Spaceship Corridor - Version 2",
+      "comments": "Alternative composition of spaceship corridor environment."
+    },
+    {
+      "id": "009",
+      "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_84bd3a5b-ce73-4d32-88fa-e04045d72122_1.png",
+      "type": "image",
+      "title": "Spaceship Corridor - Version 3",
+      "comments": "Another perspective variant of the spaceship corridor."
+    },
+    {
+      "id": "010",
+      "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_e3323366-5d81-406c-bb53-3a3ef3589e6b_3.png",
+      "type": "image",
+      "title": "Spaceship Corridor - Version 4",
+      "comments": "Final variation of the spaceship corridor establishing shot."
+    }
+  ]
+}

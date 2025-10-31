@@ -1,0 +1,135 @@
+"use client";
+
+import { Asset } from "@/lib/types";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+
+interface AssetModalProps {
+  asset: Asset | null;
+  onClose: () => void;
+}
+
+export default function AssetModal({ asset, onClose }: AssetModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    if (asset) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "unset";
+    };
+  }, [asset, onClose]);
+
+  if (!asset) return null;
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === modalRef.current) {
+      onClose();
+    }
+  };
+
+  return (
+    <div
+      ref={modalRef}
+      onClick={handleBackdropClick}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+    >
+      <div className="relative w-full max-w-6xl max-h-[90vh] bg-dark-800 rounded-xl overflow-hidden shadow-2xl">
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+          aria-label="Close modal"
+        >
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div className="flex flex-col lg:flex-row gap-6 p-6 h-full">
+          {/* Asset display */}
+          <div className="flex-1 flex items-center justify-center bg-black/30 rounded-lg overflow-hidden min-h-96">
+            {asset.type === "video" && (
+              <video
+                ref={videoRef}
+                src={asset.filename}
+                controls
+                autoPlay
+                className="w-full h-full max-h-96 lg:max-h-full object-contain"
+              />
+            )}
+
+            {asset.type === "image" && (
+              <div className="relative w-full h-full">
+                <Image
+                  src={asset.filename}
+                  alt={asset.title}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  priority
+                />
+              </div>
+            )}
+          </div>
+
+          {/* Info panel */}
+          <div className="w-full lg:w-80 flex flex-col justify-between">
+            {/* Top section */}
+            <div>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                Asset {asset.id}
+              </p>
+              <h2 className="text-2xl font-bold text-white mt-2 mb-1">
+                {asset.title}
+              </h2>
+              <div className="flex gap-2 mt-4">
+                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-white text-dark-900 rounded">
+                  {asset.type}
+                </span>
+              </div>
+            </div>
+
+            {/* Comments section */}
+            <div className="mt-8 pt-8 border-t border-gray-700">
+              <h3 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">
+                Comments
+              </h3>
+              <p className="text-base text-gray-200 leading-relaxed">
+                {asset.comments}
+              </p>
+            </div>
+
+            {/* File info */}
+            <div className="mt-6 pt-6 border-t border-gray-700">
+              <p className="text-xs text-gray-500">
+                File: <span className="text-gray-400 break-all">{asset.filename.split('/').pop()}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
