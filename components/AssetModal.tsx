@@ -7,9 +7,20 @@ import { useEffect, useRef } from "react";
 interface AssetModalProps {
   asset: Asset | null;
   onClose: () => void;
+  onNext?: () => void;
+  onPrevious?: () => void;
+  hasNext?: boolean;
+  hasPrevious?: boolean;
 }
 
-export default function AssetModal({ asset, onClose }: AssetModalProps) {
+export default function AssetModal({
+  asset,
+  onClose,
+  onNext,
+  onPrevious,
+  hasNext = false,
+  hasPrevious = false,
+}: AssetModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -17,6 +28,12 @@ export default function AssetModal({ asset, onClose }: AssetModalProps) {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         onClose();
+      }
+      if (e.key === "ArrowRight" && hasNext && onNext) {
+        onNext();
+      }
+      if (e.key === "ArrowLeft" && hasPrevious && onPrevious) {
+        onPrevious();
       }
     };
 
@@ -29,7 +46,7 @@ export default function AssetModal({ asset, onClose }: AssetModalProps) {
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "unset";
     };
-  }, [asset, onClose]);
+  }, [asset, onClose, onNext, onPrevious, hasNext, hasPrevious]);
 
   if (!asset) return null;
 
@@ -46,6 +63,52 @@ export default function AssetModal({ asset, onClose }: AssetModalProps) {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
     >
       <div className="relative w-full max-w-6xl max-h-[90vh] bg-dark-800 rounded-xl overflow-hidden shadow-2xl">
+        {/* Previous button */}
+        {hasPrevious && (
+          <button
+            onClick={onPrevious}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors disabled:opacity-50"
+            aria-label="Previous asset"
+          >
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+        )}
+
+        {/* Next button */}
+        {hasNext && (
+          <button
+            onClick={onNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors disabled:opacity-50"
+            aria-label="Next asset"
+          >
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        )}
+
         {/* Close button */}
         <button
           onClick={onClose}

@@ -11,6 +11,24 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const currentAssetIndex = selectedAsset
+    ? assets.findIndex((a) => a.id === selectedAsset.id)
+    : -1;
+  const hasNext = currentAssetIndex < assets.length - 1;
+  const hasPrevious = currentAssetIndex > 0;
+
+  const handleNextAsset = () => {
+    if (hasNext && currentAssetIndex !== -1) {
+      setSelectedAsset(assets[currentAssetIndex + 1]);
+    }
+  };
+
+  const handlePreviousAsset = () => {
+    if (hasPrevious && currentAssetIndex !== -1) {
+      setSelectedAsset(assets[currentAssetIndex - 1]);
+    }
+  };
+
   useEffect(() => {
     const fetchAssets = async () => {
       try {
@@ -76,7 +94,14 @@ export default function Home() {
       </div>
 
       {/* Modal */}
-      <AssetModal asset={selectedAsset} onClose={() => setSelectedAsset(null)} />
+      <AssetModal
+        asset={selectedAsset}
+        onClose={() => setSelectedAsset(null)}
+        onNext={handleNextAsset}
+        onPrevious={handlePreviousAsset}
+        hasNext={hasNext}
+        hasPrevious={hasPrevious}
+      />
     </main>
   );
 }
