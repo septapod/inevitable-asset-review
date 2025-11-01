@@ -1,7 +1,7 @@
 # Inevitable Spot Asset Review - Project Status
 
 **Project Status**: ✅ **COMPLETE & LIVE**
-**Last Updated**: October 31, 2025
+**Last Updated**: October 31, 2025 (v1.2.0)
 **Live URL**: https://inevitabletv.vercel.app/
 
 ---
@@ -46,6 +46,9 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 ### Design & UX
 - ✅ Sleek dark theme (#0F0F0F background)
 - ✅ Professional typography and spacing
+- ✅ Large, spacious modal for optimal viewing (max-w-7xl)
+- ✅ Large typography (title 4xl, comments lg) for readability
+- ✅ Large navigation buttons (w-8 h-8) for ease of use
 - ✅ Play button overlay on video cards
 - ✅ Hover effects with scale and shadow transitions
 - ✅ Modal info panel with asset details and comments
@@ -279,6 +282,13 @@ npm run lint     # Run ESLint
 ---
 
 ## Changelog
+
+### v1.2.0 (October 31, 2025)
+- ✅ Increased modal size for better visibility (max-w-7xl, max-h-95vh)
+- ✅ Larger typography throughout (titles 2xl → 4xl, comments base → lg)
+- ✅ Bigger navigation buttons (w-6 h-6 → w-8 h-8)
+- ✅ Expanded asset display area (500px → 600px minimum)
+- ✅ Improved spacing and padding throughout modal
 
 ### v1.1.0 (October 31, 2025)
 - ✅ Added arrow key navigation (← / → arrows, ESC to close)
