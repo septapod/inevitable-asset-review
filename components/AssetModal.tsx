@@ -62,16 +62,16 @@ export default function AssetModal({
       onClick={handleBackdropClick}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
     >
-      <div className="relative w-full max-w-6xl max-h-[90vh] bg-dark-800 rounded-xl overflow-hidden shadow-2xl">
+      <div className="relative w-full max-w-7xl max-h-[95vh] bg-dark-800 rounded-xl overflow-hidden shadow-2xl">
         {/* Previous button */}
         {hasPrevious && (
           <button
             onClick={onPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors disabled:opacity-50"
+            className="absolute left-6 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors disabled:opacity-50"
             aria-label="Previous asset"
           >
             <svg
-              className="w-6 h-6 text-white"
+              className="w-8 h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -90,11 +90,11 @@ export default function AssetModal({
         {hasNext && (
           <button
             onClick={onNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors disabled:opacity-50"
+            className="absolute right-6 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors disabled:opacity-50"
             aria-label="Next asset"
           >
             <svg
-              className="w-6 h-6 text-white"
+              className="w-8 h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -112,11 +112,11 @@ export default function AssetModal({
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+          className="absolute top-6 right-6 z-10 p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
           aria-label="Close modal"
         >
           <svg
-            className="w-6 h-6 text-white"
+            className="w-8 h-8 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -130,16 +130,16 @@ export default function AssetModal({
           </svg>
         </button>
 
-        <div className="flex flex-col lg:flex-row gap-6 p-6 h-full">
+        <div className="flex flex-col lg:flex-row gap-8 p-8 h-full">
           {/* Asset display */}
-          <div className="flex-1 flex items-center justify-center bg-black/30 rounded-lg overflow-hidden min-h-96">
+          <div className="flex-1 flex items-center justify-center bg-black/30 rounded-lg overflow-hidden min-h-[500px]">
             {asset.type === "video" && (
               <video
                 ref={videoRef}
                 src={asset.filename}
                 controls
                 autoPlay
-                className="w-full h-full max-h-96 lg:max-h-full object-contain"
+                className="w-full h-full max-h-[600px] lg:max-h-full object-contain"
               />
             )}
 
@@ -158,36 +158,36 @@ export default function AssetModal({
           </div>
 
           {/* Info panel */}
-          <div className="w-full lg:w-80 flex flex-col justify-between">
+          <div className="w-full lg:w-96 flex flex-col justify-between">
             {/* Top section */}
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+              <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
                 Asset {asset.id}
               </p>
-              <h2 className="text-2xl font-bold text-white mt-2 mb-1">
+              <h2 className="text-4xl font-bold text-white mt-3 mb-2">
                 {asset.title}
               </h2>
-              <div className="flex gap-2 mt-4">
-                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-white text-dark-900 rounded">
+              <div className="flex gap-3 mt-5">
+                <span className="inline-block px-4 py-2 text-sm font-semibold uppercase tracking-wider bg-white text-dark-900 rounded">
                   {asset.type}
                 </span>
               </div>
             </div>
 
             {/* Comments section */}
-            <div className="mt-8 pt-8 border-t border-gray-700">
-              <h3 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">
+            <div className="mt-10 pt-8 border-t border-gray-700">
+              <h3 className="text-base font-semibold text-gray-300 uppercase tracking-wider mb-4">
                 Comments
               </h3>
-              <p className="text-base text-gray-200 leading-relaxed">
+              <p className="text-lg text-gray-200 leading-relaxed">
                 {asset.comments}
               </p>
             </div>
 
             {/* File info */}
-            <div className="mt-6 pt-6 border-t border-gray-700">
-              <p className="text-xs text-gray-500">
-                File: <span className="text-gray-400 break-all">{asset.filename.split('/').pop()}</span>
+            <div className="mt-8 pt-6 border-t border-gray-700">
+              <p className="text-sm text-gray-500">
+                File: <span className="text-gray-400 break-all text-xs">{asset.filename.split('/').pop()}</span>
               </p>
             </div>
           </div>
