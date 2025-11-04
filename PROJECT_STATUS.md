@@ -1,6 +1,6 @@
 # Inevitable Spot Asset Review - Project Status
 
-**Project Status**: ✅ **UPDATED & LIVE** (v1.3.1)
+**Project Status**: ✅ **UPDATED & LIVE** (v1.4.0)
 **Last Updated**: November 4, 2025 - CURRENT
 **Live URL**: https://inevitabletv.vercel.app/
 **GitHub Commit**: `00c6917` - Asset metadata updated with production titles and comments
@@ -9,18 +9,19 @@
 
 ---
 
-## Current Revision Work (v1.3.1)
+## Current Revision Work (v1.4.0)
 
 ### Session: November 4, 2025 - Ongoing
-**Status**: ✅ New video asset added and ready for deployment
+**Status**: ✅ Assets reorganized with new video added and ready for deployment
 **Changes Made**:
-- ✅ Added new video asset: "Cryo Sleep Pod Activation Sequence" (eli_cryosleep.mp4)
+- ✅ Added new video asset: "Eli wakes up" (eli-wakingup.mp4)
 - ✅ Generated thumbnail for new video (800x450px PNG)
-- ✅ Updated assets.json with new asset entry (ID: 011)
-- ✅ Updated PROJECT_STATUS.md with new asset count (11 total: 4 videos + 7 images)
+- ✅ Reorganized asset ordering: Videos (IDs 001-005), then Images (IDs 006-012)
+- ✅ Updated asset numbering to reflect new structure
+- ✅ Total assets now: 12 (5 videos + 7 images)
 - ✅ Ready to push to GitHub for auto-deployment to Vercel
 
-**Revision Notes**: Project now includes 4 video assets showcasing various technology aspects of the Inevitable spot including the new cryo-sleep pod activation sequence.
+**Revision Notes**: All video assets are now grouped together (001-005) followed by image assets (006-012) for better organization and gallery flow.
 
 ---
 
@@ -36,7 +37,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ### Core Functionality
 - ✅ Responsive grid gallery view (3 columns desktop, 2 tablet, 1 mobile)
-- ✅ 11 assets total (4 videos + 7 images)
+- ✅ 12 assets total (5 videos + 7 images)
 - ✅ Professional dark theme with minimal design
 - ✅ Full-screen modal viewer for assets
 - ✅ Native video player with full controls
@@ -85,7 +86,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ## Assets Included
 
-### Videos (4)
+### Videos (5)
 1. **Asset 001** - LEO above Kepler 22-B ver A (23MB)
    - File: `000_Inevitable WIP Upscale_2.mp4`
    - Thumbnail: ✓ Generated
@@ -98,20 +99,24 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `Hailuo_Video_Close-up shot of cybernetic ar_440337820144619528.mp4`
    - Thumbnail: ✓ Generated
 
-4. **Asset 011** - Cryo Sleep Pod Activation Sequence (1.1MB)
+4. **Asset 004** - Cryo Sleep Pod Activation Sequence (1.1MB)
    - File: `eli_cryosleep.mp4`
    - Thumbnail: ✓ Generated
 
-### Images (7)
-4. **Asset 004** - Industrial Lab Scene (1.4MB)
-5. **Asset 005** - Medical Monitor - Variant 1 (1.4MB)
-6. **Asset 006** - Medical Monitor - Variant 2 (1.5MB)
-7. **Asset 007** - Spaceship Corridor - Version 1 (1.9MB)
-8. **Asset 008** - Spaceship Corridor - Version 2 (1.9MB)
-9. **Asset 009** - Spaceship Corridor - Version 3 (1.6MB)
-10. **Asset 010** - Spaceship Corridor - Version 4 (1.7MB)
+5. **Asset 005** - Eli wakes up (1.1MB)
+   - File: `eli-wakingup.mp4`
+   - Thumbnail: ✓ Generated
 
-**Total Media**: ~75MB (optimized for web delivery via Vercel CDN)
+### Images (7)
+6. **Asset 006** - LEO above Kepler 22-B ver B (1.4MB)
+7. **Asset 007** - CryoPod interface Ver A (1.4MB)
+8. **Asset 008** - CryoPod interface Ver B (1.5MB)
+9. **Asset 009** - Sleep Pod Corridor Ver A (1.9MB)
+10. **Asset 010** - Sleep Pod Corridor Ver B (1.9MB)
+11. **Asset 011** - Sleep Pod Corridor Ver C (1.6MB)
+12. **Asset 012** - Sleep Pod Corridor Ver D (1.7MB)
+
+**Total Media**: ~76MB (optimized for web delivery via Vercel CDN)
 
 ---
 
@@ -305,12 +310,19 @@ npm run lint     # Run ESLint
 
 ## Changelog
 
-### v1.3.1 (November 4, 2025 - Current)
+### v1.4.0 (November 4, 2025 - Current)
+- ✅ Added new video asset: "Eli wakes up" (eli-wakingup.mp4)
+- ✅ Generated thumbnail for new video (800x450px PNG format)
+- ✅ Reorganized assets.json: Videos (IDs 001-005) grouped first, Images (IDs 006-012) second
+- ✅ Updated all asset IDs to reflect new organizational structure
+- ✅ Expanded asset gallery from 11 to 12 assets (5 videos + 7 images)
+- ✅ Improved gallery organization for better user experience
+
+### v1.3.1 (November 4, 2025)
 - ✅ Added new video asset: "Cryo Sleep Pod Activation Sequence" (eli_cryosleep.mp4)
 - ✅ Generated thumbnail for new video (800x450px PNG format)
 - ✅ Updated assets.json with new asset entry
 - ✅ Expanded asset gallery from 10 to 11 assets (4 videos + 7 images)
-- ✅ Project now ready for deployment
 
 ### v1.3.0 (November 4, 2025)
 - ✅ Updated all 10 asset titles with production names
