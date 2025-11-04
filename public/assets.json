@@ -73,6 +73,14 @@
       "type": "image",
       "title": "Sleep Pod Corridor Ver D",
       "comments": "An alt version of what a corridor that houses the long term cryo sleep pods from the not so distant future. This one feels like it is even further off into the future, when the technology is fully mature."
+    },
+    {
+      "id": "011",
+      "filename": "/assets/videos/eli_cryosleep.mp4",
+      "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_011.png",
+      "title": "Cryo Sleep Pod Activation Sequence",
+      "comments": "A detailed visualization of the cryo-sleep pod activation sequence. This showcases the technical systems and environmental controls that safely place a patient into long-term cryogenic stasis for interstellar travel."
     }
   ]
 }
