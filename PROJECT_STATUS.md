@@ -1,6 +1,6 @@
 # Inevitable Spot Asset Review - Project Status
 
-**Project Status**: ✅ **UPDATED & LIVE** (v1.5.0)
+**Project Status**: ✅ **UPDATED & LIVE** (v1.6.0)
 **Last Updated**: November 4, 2025 - CURRENT
 **Live URL**: https://inevitabletv.vercel.app/
 **GitHub Commit**: `00c6917` - Asset metadata updated with production titles and comments
@@ -9,19 +9,20 @@
 
 ---
 
-## Current Revision Work (v1.5.0)
+## Current Revision Work (v1.6.0)
 
 ### Session: November 4, 2025 - Ongoing
-**Status**: ✅ New video asset added and asset numbering updated
+**Status**: ✅ New video and image assets added with updated numbering
 **Changes Made**:
-- ✅ Added new video asset: "Stepping Out" (stepping-out.mp4)
-- ✅ Generated thumbnail for new video (800x450px PNG)
-- ✅ Added new video as ID 006, shifted all image IDs to 007-013
-- ✅ Total assets now: 13 (6 videos + 7 images)
-- ✅ Maintained organization: Videos (IDs 001-006), then Images (IDs 007-013)
+- ✅ Added new video asset: "Cryopod Flyover" (flyover.mp4) as ID 007
+- ✅ Generated thumbnail for flyover video (800x450px PNG)
+- ✅ Added new image asset: "Cryopods Zoomed Out" (cryozoomout.jpg) as ID 015
+- ✅ Renumbered all existing images: IDs 007-013 → 008-014
+- ✅ Total assets now: 15 (7 videos + 8 images)
+- ✅ Maintained organization: Videos (IDs 001-007), then Images (IDs 008-015)
 - ✅ Ready to push to GitHub for auto-deployment to Vercel
 
-**Revision Notes**: Gallery now includes 6 video assets showcasing various production techniques and the hero character's journey through cryosleep and awakening.
+**Revision Notes**: Gallery now showcases the complete cryopod experience with new flyover cinematography and zoomed-out pod facility view.
 
 ---
 
@@ -37,7 +38,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ### Core Functionality
 - ✅ Responsive grid gallery view (3 columns desktop, 2 tablet, 1 mobile)
-- ✅ 13 assets total (6 videos + 7 images)
+- ✅ 15 assets total (7 videos + 8 images)
 - ✅ Professional dark theme with minimal design
 - ✅ Full-screen modal viewer for assets
 - ✅ Native video player with full controls
@@ -86,7 +87,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ## Assets Included
 
-### Videos (6)
+### Videos (7)
 1. **Asset 001** - LEO above Kepler 22-B ver A (23MB)
    - File: `000_Inevitable WIP Upscale_2.mp4`
    - Thumbnail: ✓ Generated
@@ -111,16 +112,21 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `stepping-out.mp4`
    - Thumbnail: ✓ Generated
 
-### Images (7)
-7. **Asset 007** - LEO above Kepler 22-B ver B (1.4MB)
-8. **Asset 008** - CryoPod interface Ver A (1.4MB)
-9. **Asset 009** - CryoPod interface Ver B (1.5MB)
-10. **Asset 010** - Sleep Pod Corridor Ver A (1.9MB)
-11. **Asset 011** - Sleep Pod Corridor Ver B (1.9MB)
-12. **Asset 012** - Sleep Pod Corridor Ver C (1.6MB)
-13. **Asset 013** - Sleep Pod Corridor Ver D (1.7MB)
+7. **Asset 007** - Cryopod Flyover (4.2MB)
+   - File: `flyover.mp4`
+   - Thumbnail: ✓ Generated
 
-**Total Media**: ~77MB (optimized for web delivery via Vercel CDN)
+### Images (8)
+8. **Asset 008** - LEO above Kepler 22-B ver B (1.4MB)
+9. **Asset 009** - CryoPod interface Ver A (1.4MB)
+10. **Asset 010** - CryoPod interface Ver B (1.5MB)
+11. **Asset 011** - Sleep Pod Corridor Ver A (1.9MB)
+12. **Asset 012** - Sleep Pod Corridor Ver B (1.9MB)
+13. **Asset 013** - Sleep Pod Corridor Ver C (1.6MB)
+14. **Asset 014** - Sleep Pod Corridor Ver D (1.7MB)
+15. **Asset 015** - Cryopods Zoomed Out (3.2MB)
+
+**Total Media**: ~85MB (optimized for web delivery via Vercel CDN)
 
 ---
 
@@ -314,7 +320,15 @@ npm run lint     # Run ESLint
 
 ## Changelog
 
-### v1.5.0 (November 4, 2025 - Current)
+### v1.6.0 (November 4, 2025 - Current)
+- ✅ Added new video asset: "Cryopod Flyover" (flyover.mp4) as ID 007
+- ✅ Generated thumbnail for flyover video (800x450px PNG format)
+- ✅ Added new image asset: "Cryopods Zoomed Out" (cryozoomout.jpg) as ID 015
+- ✅ Renumbered all existing images from 007-013 to 008-014
+- ✅ Expanded asset gallery from 13 to 15 assets (7 videos + 8 images)
+- ✅ Total media size now ~85MB
+
+### v1.5.0 (November 4, 2025)
 - ✅ Added new video asset: "Stepping Out" (stepping-out.mp4)
 - ✅ Generated thumbnail for new video (800x450px PNG format)
 - ✅ Shifted all image IDs to accommodate new video (now IDs 007-013)
