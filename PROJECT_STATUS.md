@@ -1,6 +1,6 @@
 # Inevitable Spot Asset Review - Project Status
 
-**Project Status**: ✅ **UPDATED & LIVE** (v1.4.0)
+**Project Status**: ✅ **UPDATED & LIVE** (v1.5.0)
 **Last Updated**: November 4, 2025 - CURRENT
 **Live URL**: https://inevitabletv.vercel.app/
 **GitHub Commit**: `00c6917` - Asset metadata updated with production titles and comments
@@ -9,19 +9,19 @@
 
 ---
 
-## Current Revision Work (v1.4.0)
+## Current Revision Work (v1.5.0)
 
 ### Session: November 4, 2025 - Ongoing
-**Status**: ✅ Assets reorganized with new video added and ready for deployment
+**Status**: ✅ New video asset added and asset numbering updated
 **Changes Made**:
-- ✅ Added new video asset: "Eli wakes up" (eli-wakingup.mp4)
+- ✅ Added new video asset: "Stepping Out" (stepping-out.mp4)
 - ✅ Generated thumbnail for new video (800x450px PNG)
-- ✅ Reorganized asset ordering: Videos (IDs 001-005), then Images (IDs 006-012)
-- ✅ Updated asset numbering to reflect new structure
-- ✅ Total assets now: 12 (5 videos + 7 images)
+- ✅ Added new video as ID 006, shifted all image IDs to 007-013
+- ✅ Total assets now: 13 (6 videos + 7 images)
+- ✅ Maintained organization: Videos (IDs 001-006), then Images (IDs 007-013)
 - ✅ Ready to push to GitHub for auto-deployment to Vercel
 
-**Revision Notes**: All video assets are now grouped together (001-005) followed by image assets (006-012) for better organization and gallery flow.
+**Revision Notes**: Gallery now includes 6 video assets showcasing various production techniques and the hero character's journey through cryosleep and awakening.
 
 ---
 
@@ -37,7 +37,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ### Core Functionality
 - ✅ Responsive grid gallery view (3 columns desktop, 2 tablet, 1 mobile)
-- ✅ 12 assets total (5 videos + 7 images)
+- ✅ 13 assets total (6 videos + 7 images)
 - ✅ Professional dark theme with minimal design
 - ✅ Full-screen modal viewer for assets
 - ✅ Native video player with full controls
@@ -86,7 +86,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ## Assets Included
 
-### Videos (5)
+### Videos (6)
 1. **Asset 001** - LEO above Kepler 22-B ver A (23MB)
    - File: `000_Inevitable WIP Upscale_2.mp4`
    - Thumbnail: ✓ Generated
@@ -107,16 +107,20 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `eli-wakingup.mp4`
    - Thumbnail: ✓ Generated
 
-### Images (7)
-6. **Asset 006** - LEO above Kepler 22-B ver B (1.4MB)
-7. **Asset 007** - CryoPod interface Ver A (1.4MB)
-8. **Asset 008** - CryoPod interface Ver B (1.5MB)
-9. **Asset 009** - Sleep Pod Corridor Ver A (1.9MB)
-10. **Asset 010** - Sleep Pod Corridor Ver B (1.9MB)
-11. **Asset 011** - Sleep Pod Corridor Ver C (1.6MB)
-12. **Asset 012** - Sleep Pod Corridor Ver D (1.7MB)
+6. **Asset 006** - Stepping Out (0.8MB)
+   - File: `stepping-out.mp4`
+   - Thumbnail: ✓ Generated
 
-**Total Media**: ~76MB (optimized for web delivery via Vercel CDN)
+### Images (7)
+7. **Asset 007** - LEO above Kepler 22-B ver B (1.4MB)
+8. **Asset 008** - CryoPod interface Ver A (1.4MB)
+9. **Asset 009** - CryoPod interface Ver B (1.5MB)
+10. **Asset 010** - Sleep Pod Corridor Ver A (1.9MB)
+11. **Asset 011** - Sleep Pod Corridor Ver B (1.9MB)
+12. **Asset 012** - Sleep Pod Corridor Ver C (1.6MB)
+13. **Asset 013** - Sleep Pod Corridor Ver D (1.7MB)
+
+**Total Media**: ~77MB (optimized for web delivery via Vercel CDN)
 
 ---
 
@@ -310,7 +314,14 @@ npm run lint     # Run ESLint
 
 ## Changelog
 
-### v1.4.0 (November 4, 2025 - Current)
+### v1.5.0 (November 4, 2025 - Current)
+- ✅ Added new video asset: "Stepping Out" (stepping-out.mp4)
+- ✅ Generated thumbnail for new video (800x450px PNG format)
+- ✅ Shifted all image IDs to accommodate new video (now IDs 007-013)
+- ✅ Expanded asset gallery from 12 to 13 assets (6 videos + 7 images)
+- ✅ Maintained video-first organization for consistent user experience
+
+### v1.4.0 (November 4, 2025)
 - ✅ Added new video asset: "Eli wakes up" (eli-wakingup.mp4)
 - ✅ Generated thumbnail for new video (800x450px PNG format)
 - ✅ Reorganized assets.json: Videos (IDs 001-005) grouped first, Images (IDs 006-012) second
