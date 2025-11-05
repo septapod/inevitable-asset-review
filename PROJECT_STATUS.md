@@ -1,6 +1,6 @@
 # Inevitable Spot Asset Review - Project Status
 
-**Project Status**: ✅ **UPDATED & LIVE** (v1.8.0)
+**Project Status**: ✅ **UPDATED & LIVE** (v1.9.0)
 **Last Updated**: November 4, 2025 - CURRENT
 **Live URL**: https://inevitabletv.vercel.app/
 **GitHub Commit**: `00c6917` - Asset metadata updated with production titles and comments
@@ -9,19 +9,19 @@
 
 ---
 
-## Current Revision Work (v1.8.0)
+## Current Revision Work (v1.9.0)
 
 ### Session: November 4, 2025 - Ongoing
-**Status**: ✅ Cyborg Leg video added with updated numbering
+**Status**: ✅ Drone Patrol video added with updated numbering
 **Changes Made**:
-- ✅ Added new video asset: "Cyborg Leg" (cyborg-leg.mp4) as ID 009
-- ✅ Generated thumbnail for cyborg leg video (800x450px PNG)
-- ✅ Renumbered all existing images: IDs 010-017 → 010-017
-- ✅ Total assets now: 17 (9 videos + 8 images)
-- ✅ Maintained organization: Videos (IDs 001-009), then Images (IDs 010-017)
+- ✅ Added new video asset: "Drone Patrol" (dronezoomies.mp4) as ID 010
+- ✅ Generated thumbnail for drone patrol video (800x450px PNG)
+- ✅ Renumbered all existing images: IDs 011-018
+- ✅ Total assets now: 18 (10 videos + 8 images)
+- ✅ Maintained organization: Videos (IDs 001-010), then Images (IDs 011-018)
 - ✅ Ready to push to GitHub for auto-deployment to Vercel
 
-**Revision Notes**: Gallery now includes cyborg augmentation technology showcase alongside surgical robotics and cryopod systems.
+**Revision Notes**: Gallery now showcases aerial defense swarms and future city security systems alongside character journey and technology immersion.
 
 ---
 
@@ -37,7 +37,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ### Core Functionality
 - ✅ Responsive grid gallery view (3 columns desktop, 2 tablet, 1 mobile)
-- ✅ 17 assets total (9 videos + 8 images)
+- ✅ 18 assets total (10 videos + 8 images)
 - ✅ Professional dark theme with minimal design
 - ✅ Full-screen modal viewer for assets
 - ✅ Native video player with full controls
@@ -86,7 +86,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ## Assets Included
 
-### Videos (9)
+### Videos (10)
 1. **Asset 001** - LEO above Kepler 22-B ver A (23MB)
    - File: `000_Inevitable WIP Upscale_2.mp4`
    - Thumbnail: ✓ Generated
@@ -123,17 +123,21 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `cyborg-leg.mp4`
    - Thumbnail: ✓ Generated
 
-### Images (8)
-10. **Asset 010** - LEO above Kepler 22-B ver B (1.4MB)
-11. **Asset 011** - CryoPod interface Ver A (1.4MB)
-12. **Asset 012** - CryoPod interface Ver B (1.5MB)
-13. **Asset 013** - Cryopods Zoomed Out (3.2MB)
-14. **Asset 014** - Sleep Pod Corridor Ver A (1.9MB)
-15. **Asset 015** - Sleep Pod Corridor Ver B (1.9MB)
-16. **Asset 016** - Sleep Pod Corridor Ver C (1.6MB)
-17. **Asset 017** - Sleep Pod Corridor Ver D (1.7MB)
+10. **Asset 010** - Drone Patrol (4.8MB)
+    - File: `dronezoomies.mp4`
+    - Thumbnail: ✓ Generated
 
-**Total Media**: ~97MB (optimized for web delivery via Vercel CDN)
+### Images (8)
+11. **Asset 011** - LEO above Kepler 22-B ver B (1.4MB)
+12. **Asset 012** - CryoPod interface Ver A (1.4MB)
+13. **Asset 013** - CryoPod interface Ver B (1.5MB)
+14. **Asset 014** - Cryopods Zoomed Out (3.2MB)
+15. **Asset 015** - Sleep Pod Corridor Ver A (1.9MB)
+16. **Asset 016** - Sleep Pod Corridor Ver B (1.9MB)
+17. **Asset 017** - Sleep Pod Corridor Ver C (1.6MB)
+18. **Asset 018** - Sleep Pod Corridor Ver D (1.7MB)
+
+**Total Media**: ~102MB (optimized for web delivery via Vercel CDN)
 
 ---
 
@@ -327,7 +331,14 @@ npm run lint     # Run ESLint
 
 ## Changelog
 
-### v1.8.0 (November 4, 2025 - Current)
+### v1.9.0 (November 4, 2025 - Current)
+- ✅ Added new video asset: "Drone Patrol" (dronezoomies.mp4) as ID 010
+- ✅ Generated thumbnail for drone patrol video (800x450px PNG format)
+- ✅ Renumbered all images: IDs 011-018 to accommodate new video
+- ✅ Expanded asset gallery from 17 to 18 assets (10 videos + 8 images)
+- ✅ Total media size now ~102MB
+
+### v1.8.0 (November 4, 2025)
 - ✅ Added new video asset: "Cyborg Leg" (cyborg-leg.mp4) as ID 009
 - ✅ Generated thumbnail for cyborg leg video (800x450px PNG format)
 - ✅ Renumbered all images: IDs 010-017 to accommodate new video

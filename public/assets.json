@@ -75,55 +75,63 @@
     },
     {
       "id": "010",
+      "filename": "/assets/videos/dronezoomies.mp4",
+      "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_017.png",
+      "title": "Drone Patrol",
+      "comments": "Drone defense swarms over a future city. Image via Midjourney, video via Hailuo 2.3."
+    },
+    {
+      "id": "011",
       "filename": "/assets/images/ianfreeze_Cinematic_wide_shot_of_an_industrial_scientific_spa_ff1b3549-5c40-4ff0-888e-04e3ae07620a_2.png",
       "type": "image",
       "title": "LEO above Kepler 22-B ver B",
       "comments": "An alt of our hero ship, drifting in low orbit over Kepler 22-B. Aiming for a realistic depiction of what a ship meant for interplanetary exploration might look, something a bit larger and more futuristic."
     },
     {
-      "id": "011",
+      "id": "012",
       "filename": "/assets/images/ianfreeze_Macro_shot_of_a_medical_monitoring_screen_transpare_8b5b3a52-de86-4e11-a5f8-fdb5dad0a2af_0.png",
       "type": "image",
       "title": "CryoPod interface Ver A",
       "comments": "A very basic generation of the computer interface for the sleep pods. In actual production, this will most likely have to be recreated in more traditional design software so we have full control over all the text and animation, but this is a good jumping off point for look development."
     },
     {
-      "id": "012",
+      "id": "013",
       "filename": "/assets/images/ianfreeze_Macro_shot_of_a_medical_monitoring_screen_transpare_8b5b3a52-de86-4e11-a5f8-fdb5dad0a2af_1.png",
       "type": "image",
       "title": "CryoPod interface Ver B",
       "comments": "Another very basic generation of the computer interface for the sleep pods."
     },
     {
-      "id": "013",
+      "id": "014",
       "filename": "/assets/images/cryozoomout.jpg",
       "type": "image",
       "title": "Cryopods Zoomed Out",
       "comments": "Used nanobanana to edit close-up image of Eli in cryopod to this more zoomed out view."
     },
     {
-      "id": "014",
+      "id": "015",
       "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_0c4406b4-16e2-4e96-a6da-463dd233ef01_3.png",
       "type": "image",
       "title": "Sleep Pod Corridor Ver A",
       "comments": "A version of what a corridor that houses the long term cryo sleep pods from the not so distant future. We wanted something that felt like it could exist today."
     },
     {
-      "id": "015",
+      "id": "016",
       "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_27ac975c-7920-4ff2-b770-4d6f7eebf855_1.png",
       "type": "image",
       "title": "Sleep Pod Corridor Ver B",
       "comments": "An alt version of what a corridor that houses the long term cryo sleep pods from the not so distant future."
     },
     {
-      "id": "016",
+      "id": "017",
       "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_84bd3a5b-ce73-4d32-88fa-e04045d72122_1.png",
       "type": "image",
       "title": "Sleep Pod Corridor Ver C",
       "comments": "An alt version of what a corridor that houses the long term cryo sleep pods from the not so distant future. This one feels like it is slightly further off into the future, when the technology is more mature."
     },
     {
-      "id": "017",
+      "id": "018",
       "filename": "/assets/images/ianfreeze_Wide-angle_shot_looking_down_a_long_spaceship_corri_e3323366-5d81-406c-bb53-3a3ef3589e6b_3.png",
       "type": "image",
       "title": "Sleep Pod Corridor Ver D",
