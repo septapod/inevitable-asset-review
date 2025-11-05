@@ -99,7 +99,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `Hailuo_Video_Close-up shot of cybernetic ar_440337820144619528.mp4`
    - Thumbnail: ✓ Generated
 
-4. **Asset 004** - Cryo Sleep Pod Activation Sequence (1.1MB)
+4. **Asset 004** - Eli in Cryo Sleep (1.1MB)
    - File: `eli_cryosleep.mp4`
    - Thumbnail: ✓ Generated
 
