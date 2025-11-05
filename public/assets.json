@@ -51,6 +51,14 @@
     },
     {
       "id": "007",
+      "filename": "/assets/videos/cryozoomout.mp4",
+      "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_014.jpg",
+      "title": "Cryopods Zoomed Out",
+      "comments": "Used nanobanana to edit close-up image of Eli in cryopod to this more zoomed out view. Hailuo 2.3 to convert to video."
+    },
+    {
+      "id": "008",
       "filename": "/assets/videos/flyover.mp4",
       "type": "video",
       "thumbnail": "/assets/thumbnails/thumb_014.png",
@@ -58,7 +66,7 @@
       "comments": "Used nanobanana to remix the cryopod shot of Eli, then used Gemini Veo 3.1 for the flyover video."
     },
     {
-      "id": "008",
+      "id": "009",
       "filename": "/assets/videos/surgerybot.mp4",
       "type": "video",
       "thumbnail": "/assets/thumbnails/thumb_015.png",
@@ -66,7 +74,7 @@
       "comments": "Generated with LTX Pro 2."
     },
     {
-      "id": "009",
+      "id": "010",
       "filename": "/assets/videos/cyborg-leg.mp4",
       "type": "video",
       "thumbnail": "/assets/thumbnails/thumb_016.png",
@@ -74,7 +82,7 @@
       "comments": "Image and original video created with LTX Pro 2. Image adapted with Hailuo 2.3."
     },
     {
-      "id": "010",
+      "id": "011",
       "filename": "/assets/videos/dronezoomies.mp4",
       "type": "video",
       "thumbnail": "/assets/thumbnails/thumb_017.png",
@@ -82,33 +90,25 @@
       "comments": "Drone defense swarms over a future city. Image via Midjourney, video via Hailuo 2.3."
     },
     {
-      "id": "011",
+      "id": "012",
       "filename": "/assets/images/ianfreeze_Cinematic_wide_shot_of_an_industrial_scientific_spa_ff1b3549-5c40-4ff0-888e-04e3ae07620a_2.png",
       "type": "image",
       "title": "LEO above Kepler 22-B ver B",
       "comments": "An alt of our hero ship, drifting in low orbit over Kepler 22-B. Aiming for a realistic depiction of what a ship meant for interplanetary exploration might look, something a bit larger and more futuristic."
     },
     {
-      "id": "012",
+      "id": "013",
       "filename": "/assets/images/ianfreeze_Macro_shot_of_a_medical_monitoring_screen_transpare_8b5b3a52-de86-4e11-a5f8-fdb5dad0a2af_0.png",
       "type": "image",
       "title": "CryoPod interface Ver A",
       "comments": "A very basic generation of the computer interface for the sleep pods. In actual production, this will most likely have to be recreated in more traditional design software so we have full control over all the text and animation, but this is a good jumping off point for look development."
     },
     {
-      "id": "013",
+      "id": "014",
       "filename": "/assets/images/ianfreeze_Macro_shot_of_a_medical_monitoring_screen_transpare_8b5b3a52-de86-4e11-a5f8-fdb5dad0a2af_1.png",
       "type": "image",
       "title": "CryoPod interface Ver B",
       "comments": "Another very basic generation of the computer interface for the sleep pods."
-    },
-    {
-      "id": "014",
-      "filename": "/assets/videos/cryozoomout.mp4",
-      "type": "video",
-      "thumbnail": "/assets/thumbnails/thumb_014.jpg",
-      "title": "Cryopods Zoomed Out",
-      "comments": "Used nanobanana to edit close-up image of Eli in cryopod to this more zoomed out view. Hailuo 2.3 to convert to video."
     },
     {
       "id": "015",
