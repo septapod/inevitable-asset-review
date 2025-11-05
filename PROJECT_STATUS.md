@@ -115,7 +115,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `cryozoomout.mp4`
    - Thumbnail: ✓ Generated
 
-8. **Asset 008** - Cryopod Flyover (4.2MB)
+8. **Asset 008** - alt cryopods flyover (4.2MB)
    - File: `flyover.mp4`
    - Thumbnail: ✓ Generated
 
