@@ -1,6 +1,6 @@
 # Inevitable Spot Asset Review - Project Status
 
-**Project Status**: ✅ **UPDATED & LIVE** (v1.7.1)
+**Project Status**: ✅ **UPDATED & LIVE** (v1.8.0)
 **Last Updated**: November 4, 2025 - CURRENT
 **Live URL**: https://inevitabletv.vercel.app/
 **GitHub Commit**: `00c6917` - Asset metadata updated with production titles and comments
@@ -9,19 +9,19 @@
 
 ---
 
-## Current Revision Work (v1.7.1)
+## Current Revision Work (v1.8.0)
 
 ### Session: November 4, 2025 - Ongoing
-**Status**: ✅ Asset ordering adjusted - Cryopods Zoomed Out moved before Sleep Pod Corridors
+**Status**: ✅ Cyborg Leg video added with updated numbering
 **Changes Made**:
-- ✅ Reorganized image assets for better thematic flow
-- ✅ Moved "Cryopods Zoomed Out" from ID 016 to ID 012
-- ✅ Renumbered Sleep Pod Corridor assets: IDs 012-015 → 013-016
-- ✅ New organization: CryoPod interfaces (010-011) → Cryopods Zoomed Out (012) → Sleep Pod Corridors (013-016)
-- ✅ Total assets: 16 (8 videos + 8 images) - unchanged
+- ✅ Added new video asset: "Cyborg Leg" (cyborg-leg.mp4) as ID 009
+- ✅ Generated thumbnail for cyborg leg video (800x450px PNG)
+- ✅ Renumbered all existing images: IDs 010-017 → 010-017
+- ✅ Total assets now: 17 (9 videos + 8 images)
+- ✅ Maintained organization: Videos (IDs 001-009), then Images (IDs 010-017)
 - ✅ Ready to push to GitHub for auto-deployment to Vercel
 
-**Revision Notes**: Asset ordering now follows a more logical narrative flow - from close-up pod interface to zoomed-out facility view to corridor exploration.
+**Revision Notes**: Gallery now includes cyborg augmentation technology showcase alongside surgical robotics and cryopod systems.
 
 ---
 
@@ -37,7 +37,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ### Core Functionality
 - ✅ Responsive grid gallery view (3 columns desktop, 2 tablet, 1 mobile)
-- ✅ 16 assets total (8 videos + 8 images)
+- ✅ 17 assets total (9 videos + 8 images)
 - ✅ Professional dark theme with minimal design
 - ✅ Full-screen modal viewer for assets
 - ✅ Native video player with full controls
@@ -86,7 +86,7 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
 
 ## Assets Included
 
-### Videos (8)
+### Videos (9)
 1. **Asset 001** - LEO above Kepler 22-B ver A (23MB)
    - File: `000_Inevitable WIP Upscale_2.mp4`
    - Thumbnail: ✓ Generated
@@ -119,17 +119,21 @@ A minimal, sleek asset review platform for viewing and commenting on video and i
    - File: `surgerybot.mp4`
    - Thumbnail: ✓ Generated
 
-### Images (8)
-9. **Asset 009** - LEO above Kepler 22-B ver B (1.4MB)
-10. **Asset 010** - CryoPod interface Ver A (1.4MB)
-11. **Asset 011** - CryoPod interface Ver B (1.5MB)
-12. **Asset 012** - Cryopods Zoomed Out (3.2MB)
-13. **Asset 013** - Sleep Pod Corridor Ver A (1.9MB)
-14. **Asset 014** - Sleep Pod Corridor Ver B (1.9MB)
-15. **Asset 015** - Sleep Pod Corridor Ver C (1.6MB)
-16. **Asset 016** - Sleep Pod Corridor Ver D (1.7MB)
+9. **Asset 009** - Cyborg Leg (4.7MB)
+   - File: `cyborg-leg.mp4`
+   - Thumbnail: ✓ Generated
 
-**Total Media**: ~92MB (optimized for web delivery via Vercel CDN)
+### Images (8)
+10. **Asset 010** - LEO above Kepler 22-B ver B (1.4MB)
+11. **Asset 011** - CryoPod interface Ver A (1.4MB)
+12. **Asset 012** - CryoPod interface Ver B (1.5MB)
+13. **Asset 013** - Cryopods Zoomed Out (3.2MB)
+14. **Asset 014** - Sleep Pod Corridor Ver A (1.9MB)
+15. **Asset 015** - Sleep Pod Corridor Ver B (1.9MB)
+16. **Asset 016** - Sleep Pod Corridor Ver C (1.6MB)
+17. **Asset 017** - Sleep Pod Corridor Ver D (1.7MB)
+
+**Total Media**: ~97MB (optimized for web delivery via Vercel CDN)
 
 ---
 
@@ -323,7 +327,14 @@ npm run lint     # Run ESLint
 
 ## Changelog
 
-### v1.7.1 (November 4, 2025 - Current)
+### v1.8.0 (November 4, 2025 - Current)
+- ✅ Added new video asset: "Cyborg Leg" (cyborg-leg.mp4) as ID 009
+- ✅ Generated thumbnail for cyborg leg video (800x450px PNG format)
+- ✅ Renumbered all images: IDs 010-017 to accommodate new video
+- ✅ Expanded asset gallery from 16 to 17 assets (9 videos + 8 images)
+- ✅ Total media size now ~97MB
+
+### v1.7.1 (November 4, 2025)
 - ✅ Reorganized image asset ordering for better narrative flow
 - ✅ Moved "Cryopods Zoomed Out" from ID 016 to ID 012 (before Sleep Pod Corridors)
 - ✅ Renumbered Sleep Pod Corridor assets: IDs 012-015 → 013-016
