@@ -104,10 +104,11 @@
     },
     {
       "id": "014",
-      "filename": "/assets/images/cryozoomout.jpg",
-      "type": "image",
+      "filename": "/assets/videos/cryozoomout.mp4",
+      "type": "video",
+      "thumbnail": "/assets/thumbnails/thumb_014.jpg",
       "title": "Cryopods Zoomed Out",
-      "comments": "Used nanobanana to edit close-up image of Eli in cryopod to this more zoomed out view."
+      "comments": "Used nanobanana to edit close-up image of Eli in cryopod to this more zoomed out view. Hailuo 2.3 to convert to video."
     },
     {
       "id": "015",
